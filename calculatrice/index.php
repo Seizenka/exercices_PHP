@@ -1,6 +1,9 @@
 <?php
     //Première possibilité : if...else 
 
+    //note : echo '<script>alert
+
+
 ?>
 
 <!DOCTYPE html>
@@ -15,9 +18,15 @@
 </head>
 <body>
     <form name="calculatrice" action="index.php" method="GET">
-    Votre identifiant : <input name="login" size=25 type="number"/><p></p>
-    Votre mot de passe : <input name="password" size=25 type="number"/><p></p>
-    <input type=submit value="envoyer" name="envoyer"/>
+    Premier nombre : <input name="nombre1" size=25 type="number"/>
+    <select name="méthode">
+    <option value="addition">+</option>
+    <option value="soustraction">-</option>
+    <option value="division">/</option>
+    <option value="multiplication">x</option>
+    </select>
+    Deuxième nombre : <input name="nombre2" size=25 type="number"/><p></p>
+    <input type=submit value="resultat" name="resultat"/>
     </form>
 </body>
 </html>
