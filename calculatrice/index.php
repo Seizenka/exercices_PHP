@@ -2,6 +2,11 @@
     //Première possibilité : if...else 
 
     //note : echo '<script>alert
+    $nbr1 = $_GET['nombre1'];
+    $nbr2 = $_GET['nombre2'];
+    $result = $_GET['resultat'];
+
+
 
 
 ?>
@@ -18,15 +23,15 @@
 </head>
 <body>
     <form name="calculatrice" action="index.php" method="GET">
-    Premier nombre : <input name="nombre1" size=25 type="number"/>
-    <select name="méthode">
-    <option value="addition">+</option>
-    <option value="soustraction">-</option>
-    <option value="division">/</option>
-    <option value="multiplication">x</option>
-    </select>
-    Deuxième nombre : <input name="nombre2" size=25 type="number"/><p></p>
-    <input type=submit value="resultat" name="resultat"/>
+        Premier nombre : <input name="nombre1" size=25 type="number"/>
+        <select name="méthode">
+            <option value="addition">+</option>
+            <option value="soustraction">-</option>
+            <option value="division">/</option>
+            <option value="multiplication">x</option>
+        </select>
+        Deuxième nombre : <input name="nombre2" size=25 type="number"/><p></p>
+        <input type=submit value="resultat" name="resultat"/>
     </form>
 </body>
 </html>
