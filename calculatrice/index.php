@@ -26,6 +26,11 @@
             $result = $nbr1 / $nbr2;
             echo $result;
         }
+        elseif($operator == "multiplication"){
+            //On configure la multiplication
+            $result = $nbr1 * $nbr2;
+            echo $result;
+        }
     }
 
 
