@@ -38,7 +38,7 @@
 
     //Deuxième possibilité : switch//
 
-    switch($operator){
+    /*switch($operator){
         case "addition":
             $result = $nbr1 + $nbr2;
             echo $result;
@@ -62,13 +62,44 @@
             echo $result;
             break;
         //Multiplication fonctionne
+    }*/
+
+    //Deuxième méthode switch fonctionnelle
+
+    //Troisième possibilité function//
+if(isset($_GET['resultat'])){
+    function operateur($operator){
+         function addition($nbr1, $nbr2){
+             $result = $_GET['nombre1'] + $_GET['nombre2'];
+             echo $result;
+         }
+         addition();
+         //On configure l'addition
+
+         function soustraction($nbr1, $nbr2){
+             $result = $_GET['nombre1'] - $_GET['nombre2'];
+             echo $result;
+         }
+         soustraction();
+         //On configure la soustraction
+
+         function division($nbr1, $nbr2){
+             $result = $_GET['nombre1'] / $_GET['nombre2'];
+             echo $result;
+         }
+         division();
+         //On configure la division
+
+         function multiplication($nbr1, $nbr2){
+             $result = $_GET['nombre1'] * $_GET['nombre2'];
+             echo $result;
+         }
+         multiplication();
+         //On configure la multiplication
     }
-
-
-
-
-
-
+    operateur();
+}
+    //Troisième méthode function fonctionnelle
 
 ?>
 
