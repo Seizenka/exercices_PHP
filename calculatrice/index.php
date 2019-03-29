@@ -1,12 +1,13 @@
 <?php
     echo "<h1>La calculatrice</h1>";
-    //Première possibilité : if...else 
+
+    //Première possibilité : if...else//
 
     $nbr1 = $_GET['nombre1'];
     $nbr2 = $_GET['nombre2'];
     $operator = $_GET['méthode'];//Operateur qui comprend l'addition - soustracteur - division - multiplication
     
-    if(isset($_GET['resultat'])){
+    /*if(isset($_GET['resultat'])){
         //Déclarer lorsque l'un des champs est vide
         if($nbr1 == "" || $nbr2 == ""){
             echo '<script langage="javascript">alert("L\'un des champs est vide");</script>';
@@ -31,7 +32,38 @@
             $result = $nbr1 * $nbr2;
             echo $result;
         }
+    }*/
+
+    //Première méthode if...else fonctionnelle
+
+    //Deuxième possibilité : switch//
+
+    switch($operator){
+        case "addition":
+            $result = $nbr1 + $nbr2;
+            echo $result;
+            break;
+        //Addition fonctionne
+
+        case "soustraction":
+            $result = $nbr1 - $nbr2;
+            echo $result;
+            break;
+        //Soustraction fonctionne
+
+        case "division":
+            $result = $nbr1 / $nbr2;
+            echo $result;
+            break;
+        //Division fonctionne
+
+        case "multiplication":
+            $result = $nbr1 * $nbr2;
+            echo $result;
+            break;
+        //Multiplication fonctionne
     }
+
 
 
 
