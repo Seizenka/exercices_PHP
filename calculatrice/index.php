@@ -16,10 +16,10 @@
             $result = $nbr1 + $nbr2;
             echo $result;
         }
-        elseif($operatio == "soustraction"){
+        elseif($operator == "soustraction"){
             //On configure la soustraction
             $result = $nbr1 - $nbr2;
-            echo $resultat;
+            echo $result;
         }
     }
 
