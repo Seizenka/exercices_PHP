@@ -2,19 +2,24 @@
     echo "<h1>La calculatrice</h1>";
     //Première possibilité : if...else 
 
-    //note : echo '<script>alert
-
     $nbr1 = $_GET['nombre1'];
     $nbr2 = $_GET['nombre2'];
-    $operator = $_GET['méthode'];
+    $operator = $_GET['méthode'];//Operateur qui comprend l'addition - soustracteur - division - multiplication
     
     if(isset($_GET['resultat'])){
         //Déclarer lorsque l'un des champs est vide
         if($nbr1 == "" || $nbr2 == ""){
             echo '<script langage="javascript">alert("L\'un des champs est vide");</script>';
-        }elseif($operator == "addition"){
+        }
+        elseif($operator == "addition"){
+            //On configure l'addition
             $result = $nbr1 + $nbr2;
             echo $result;
+        }
+        elseif($operatio == "soustraction"){
+            //On configure la soustraction
+            $result = $nbr1 - $nbr2;
+            echo $resultat;
         }
     }
 
