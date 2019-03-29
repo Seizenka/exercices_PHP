@@ -21,6 +21,11 @@
             $result = $nbr1 - $nbr2;
             echo $result;
         }
+        elseif($operator == "division"){
+            //On configure la division
+            $result = $nbr1 / $nbr2;
+            echo $result;
+        }
     }
 
 
