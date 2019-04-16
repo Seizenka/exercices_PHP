@@ -1,4 +1,5 @@
 <?php
+echo "<h1>Les conditions - Exercice 2</h1>";
 $isEasy = true;
 if($isEasy == true) {
     echo 'C\'est facile !';

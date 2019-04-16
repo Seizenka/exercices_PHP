@@ -1,3 +1,14 @@
+<?php
+echo "<h1>Les variables - Exercice 1</h1>";
+ $prenom = 'Cassandra';
+ $nom = 'Caestecker';
+ $age = 21;
+ echo "Bonjour $prenom, enfant de la famille $nom ayant atteint de level $age !";
+ var_dump($prenom);
+ var_dump($nom);
+ var_dump($age);
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,17 +20,9 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>Les variables - Exercice 1</h1>
+    
 
-    <?php
- $prenom = 'Cassandra';
- $nom = 'Caestecker';
- $age = 21;
- echo "Bonjour $prenom, enfant de la famille $nom ayant atteint de level $age !";
- var_dump($prenom);
- var_dump($nom);
- var_dump($age);
- ?>
+ 
     
 </body>
 </html>

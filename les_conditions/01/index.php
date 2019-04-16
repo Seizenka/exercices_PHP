@@ -1,4 +1,5 @@
 <?php
+echo "<h1>Les conditions - Exercice 1</h1>";
 $age = 18;
 
 if($age >= 18) {
